@@ -1,0 +1,24 @@
+.navbar{
+    height: 60px;
+    background-color: #4d0026;
+    top: 0;
+    padding: 12px;
+    color: white;
+}
+.navbar > .title > h3{
+    margin: 10px;
+    font-size: 28px;
+    margin-right: 40px;
+    display: flex;
+}
+.navbar > .content{
+    float: right;
+    margin-top: -40px;
+}
+.navbar > .content > a{
+    font-size: 22px;
+    margin: 14px;
+    margin-right: 12px;
+    text-decoration: none;
+    color: white;
+}

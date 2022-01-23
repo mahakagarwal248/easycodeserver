@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 .s1{
-    background-color: blanchedalmond;
+    background: linear-gradient(to top right, #ffffcc 26%, #ff66ff 100%);
     display: flex;
     padding: 20px;
 }

@@ -66,6 +66,7 @@
     color: #ffff00;
     animation-name: example;
     animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 form{
     

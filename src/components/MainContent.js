@@ -62,13 +62,13 @@ function MainContent() {
         </div>
       </section>
       <h1 className="h1">Choose your design from our catalogue!</h1>
-      <section className="s2">
+      <section className="s2" id="catalogue">
         {Data.map((data, index) => {
           return <Cards key={index} data={data} />;
         })}
       </section>
       <section className="s3">
-        <div className="contact">
+        <div className="contact" id="contact">
           <h3>Get In Touch With Us!</h3>
           <form>
             <div className="form">

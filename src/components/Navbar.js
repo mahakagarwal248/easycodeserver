@@ -10,8 +10,8 @@ function Navbar() {
                 </div>
                 <div className="contents">
                     <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#catalogue">Catalogue</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
             </div>
         </div>

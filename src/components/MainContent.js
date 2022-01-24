@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from './Card';
 import '../css/MainContent.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 const Data = [
   {
@@ -48,26 +49,88 @@ const Data = [
 function MainContent() {
   return (
     <div className="maincontent">
+      <Carousel interval={"3000"}>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://reontechnologiesuaetech.files.wordpress.com/2019/12/1_wk7b5b7bqkkkpezdlsegtq.jpeg?w=1200"
+            alt="First slide"
+            style={{ height: 600 }}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://cdn1.droom.in/images/news_images/2021-01-14/29a6f986b807cbbf5fa7a5d463124b33.jpg"
+            alt="Second slide"
+            style={{ height: 600 }}
+          />
+
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://wallpaperaccess.com/full/1947431.jpg"
+            alt="Third slide"
+            style={{ height: 600 }}
+          />
+        </Carousel.Item>
+      </Carousel>
       <section className="s1">
         <div className="p1">
           <h1>About Us</h1>
-          <p>"Hey! We are here to solve your all the problems regarding your own website. 
-            We are here to build, design and deploy your site within a very effective budget.
-            You can select a template for your site from our suggestion or can give your own template, 
+          <p>"Hey! We are here to solve your all the problems regarding your website.
+            We are here to build, design and deploy your own site within a very effective budget.
+            You can select a template for your site from our suggestion or can give your own templates,
             we will do your work for you."
           </p>
         </div>
-        <div className="p2">
-          <img src="https://www.cnet.com/a/img/YZ5IkSO7Yl-6YNk4d-gIvD-V-9g=/1200x675/2020/06/10/06f2b84a-2241-4567-a2a5-611ebb1e2650/gettyimages-1129377183.jpg"/>
+      </section>
+      <section className="s2" id="offerings">
+        <h1>Our Offereings</h1>
+        <div className="offering">
+          <div className="element">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zf9UqKeCwZD0YsiDdgw86o_QdKDSJ6hQbQ&usqp=CAU"/>
+            <span>Frontend Designing</span>
+          </div>
+          <div className="element">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJG5-g4sf3-O7xSzSJdnpOsHpJu3znVK3zGA&usqp=CAU"/>
+            <span>Backend Designing</span>
+          </div>
+          <div className="element">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJT3VSez20rWVUKknkh-whRNrnn1YgDktMDQ&usqp=CAU"/>
+            <span>Database Designing</span>
+          </div>
+          <div className="element">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDyMeKROjjVIEmgDITb1M9cR1QJOAFdPCGRfFUUklXqK6rzRR8ytOk-H6vdET2IUjM8ck&usqp=CAU" />
+            <span>Complete Website</span>
+          </div>
         </div>
       </section>
-      <h1 className="h1">Choose your design from our catalogue!</h1>
-      <section className="s2" id="catalogue">
-        {Data.map((data, index) => {
-          return <Cards key={index} data={data} />;
-        })}
-      </section>
       <section className="s3">
+        <h1>Languages & Technologies We Use!</h1>
+        <div className="lt">
+          <h3>HTML</h3>
+          <h3>CSS</h3>
+          <h3>JavaScript</h3>
+          <h3>MySQL</h3>
+          <h3>PHP</h3>
+          <h3>ReactJs</h3>
+          <h3>NodeJs</h3>
+          <h3>MERN stack</h3>
+        </div>
+      </section>
+      <section className="s4" id="catalogue">
+        <div className="d1">
+          <h1 className="h1">Choose your design from our catalogue!</h1>
+        </div>
+        <div className="d2">
+          {Data.map((data, index) => {
+            return <Cards key={index} data={data} />;
+          })}
+        </div>
+      </section>
+      <section className="s5">
         <div className="contact" id="contact">
           <h3>Get In Touch With Us!</h3>
           <form>

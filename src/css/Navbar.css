@@ -1,6 +1,7 @@
 .navbar{
     height: 80px;
-    background-color: #4d0026;
+    background-color: black ;
+    opacity: 0.8;
     width: 100%;
     top: 0;
     padding: 12px;

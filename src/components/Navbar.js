@@ -10,6 +10,7 @@ function Navbar() {
                 </div>
                 <div className="contents">
                     <a href="#">Home</a>
+                    <a href="#offerings">Offerings</a>
                     <a href="#catalogue">Catalogue</a>
                     <a href="#contact">Contact Us</a>
                 </div>

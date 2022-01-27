@@ -1,26 +1,53 @@
 .navbar{
-    height: 80px;
-    background-color: black ;
-    opacity: 0.8;
+    position: absolute;
+    height: 60px;
     width: 100%;
     top: 0;
     padding: 12px;
-    color: white;
+    color: black;
     display: flex;
 }
-.navbar > .title > h3{
+.title{
+    display: flex;
+}
+.title > h3 {
+    display: flex;
     font-size: 28px;
-    margin-right: 40px;
-    margin-left: 10px;
+    margin-right: 100px;
+    margin-left: 24px;
+    font-weight: bold;
+}
+.title > a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: auto;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.navbar > .contents > a{
+    font-size: 20px;
+    margin-right: 18px;
+    text-decoration: none;
+    color: black;
+}
+.contents{
     display: flex;
 }
-.navbar > .contents{
-    justify-content: end;
+.contents > p{
+    margin: auto;
+    margin-right: 40px;
+    font-size: 24px;
+    font-weight: 600;
 }
-.navbar > .contents > a{
-    font-size: 22px;
-    margin: 14px;
-    margin-right: 12px;
-    text-decoration: none;
+.contents > .btn{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background-color: #4d4dff;
     color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 40px;
 }

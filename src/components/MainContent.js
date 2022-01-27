@@ -49,7 +49,7 @@ const Data = [
 function MainContent() {
   return (
     <div className="maincontent">
-      <Carousel interval={"3000"}>
+      <Carousel interval={"3000"} style={{border:"wavy"}}>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -90,7 +90,7 @@ function MainContent() {
         <h1>Our Offereings</h1>
         <div className="offering">
           <div className="element">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zf9UqKeCwZD0YsiDdgw86o_QdKDSJ6hQbQ&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zf9UqKeCwZD0YsiDdgw86o_QdKDSJ6hQbQ&usqp=CAU" alt=""/>
             <span>Frontend Designing</span>
           </div>
           <div className="element">

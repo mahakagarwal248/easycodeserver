@@ -8,7 +8,7 @@ function Cards({data}) {
         <div className="card">
             <Card
                 hoverable
-                style={{ width: 300, padding:12 }}
+                style={{ width: 350, margin:'auto',paddingLeft:15 }}
                 cover={<img alt="example" src={data.imgUrl} />}
                 >
                 <Meta title={data.title} description={data.desc} />

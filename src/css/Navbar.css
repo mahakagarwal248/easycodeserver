@@ -1,11 +1,12 @@
 .navbar{
     position: absolute;
-    height: 60px;
+    height: 85px;
     width: 100%;
     top: 0;
     padding: 12px;
     color: black;
     display: flex;
+    background-color: white;
 }
 .title{
     display: flex;

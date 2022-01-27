@@ -1,19 +1,16 @@
 .s1{
     margin: 0px 40px;
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB2VTONh27b4FanulsixHSK0yqveTvrObRTw&usqp=CAU");
+    background: url("../images/image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-x: right;
     background-size: cover;
-    height: 600px;
-    
+    height: 800px;
 }
 .s1content{
-    background-color: white;
-    margin-left: 60px;
-    width: 600px;
-    height: 600px;
     padding-top: 200px;
+    margin-left: 50px;
+    width: 600px;
     text-align: left;
     padding-left: 30px;
 }

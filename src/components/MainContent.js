@@ -1,55 +1,71 @@
-import React from 'react';
-import Cards from './Card';
-import '../css/MainContent.css';
-import Carousel from 'react-bootstrap/Carousel';
+import React from "react";
+import Cards from "./Card";
+import "../css/MainContent.css";
+import Carousel from "react-bootstrap/Carousel";
 
 const Data = [
   {
     title: "mytitle1",
+    goto: "site1",
     desc: "mydesc1",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle2",
     desc: "mydesc2",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site2",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle3",
     desc: "mydesc3",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site3",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle4",
     desc: "mydesc4",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site4",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle5",
     desc: "mydesc5",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site5",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle6",
     desc: "mydesc6",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site6",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle7",
     desc: "mydesc7",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site7",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
   {
     title: "mytitle8",
     desc: "mydesc8",
-    imgUrl: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+    goto: "site8",
+    imgUrl:
+      "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
   },
 ];
 
 function MainContent() {
   return (
     <div className="maincontent">
-      <Carousel interval={"3000"} style={{border:"wavy"}}>
+      <Carousel interval={"3000"} style={{ border: "wavy" }}>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -65,7 +81,6 @@ function MainContent() {
             alt="Second slide"
             style={{ height: 600 }}
           />
-
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -79,10 +94,12 @@ function MainContent() {
       <section className="s1">
         <div className="p1">
           <h1>About Us</h1>
-          <p>"Hey! We are here to solve your all the problems regarding your website.
-            We are here to build, design and deploy your own site within a very effective budget.
-            You can select a template for your site from our suggestion or can give your own templates,
-            we will do your work for you."
+          <p>
+            "Hey! We are here to solve your all the problems regarding your
+            website. We are here to build, design and deploy your own site
+            within a very effective budget. You can select a template for your
+            site from our suggestion or can give your own templates, we will do
+            your work for you."
           </p>
         </div>
       </section>
@@ -90,15 +107,18 @@ function MainContent() {
         <h1>Our Offereings</h1>
         <div className="offering">
           <div className="element">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zf9UqKeCwZD0YsiDdgw86o_QdKDSJ6hQbQ&usqp=CAU" alt=""/>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zf9UqKeCwZD0YsiDdgw86o_QdKDSJ6hQbQ&usqp=CAU"
+              alt=""
+            />
             <span>Frontend Designing</span>
           </div>
           <div className="element">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJG5-g4sf3-O7xSzSJdnpOsHpJu3znVK3zGA&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJG5-g4sf3-O7xSzSJdnpOsHpJu3znVK3zGA&usqp=CAU" />
             <span>Backend Designing</span>
           </div>
           <div className="element">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJT3VSez20rWVUKknkh-whRNrnn1YgDktMDQ&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJT3VSez20rWVUKknkh-whRNrnn1YgDktMDQ&usqp=CAU" />
             <span>Database Designing</span>
           </div>
           <div className="element">
@@ -155,7 +175,7 @@ function MainContent() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 export default MainContent;

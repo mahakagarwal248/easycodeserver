@@ -1,0 +1,27 @@
+.navbar{
+    top: 50px;
+    z-index: 4;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 76px;
+}
+.logo {
+    font-weight: bolder;
+    font-size: larger;
+    flex: 0.4;
+    text-align: center;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.D1navcontents {
+    display: flex;
+    flex: 0.6;
+}
+.D1navcontents > h5{
+    font-size: 14px;
+    padding: 30px 15px;
+}
+.D1navcontents>h5:hover{
+    cursor: pointer;
+}

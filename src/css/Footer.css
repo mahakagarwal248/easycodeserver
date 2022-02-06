@@ -40,3 +40,11 @@
 .fdd > p{
     font-weight: 600;
 }
+
+@media only screen and (max-width:780px) {
+    .footer{
+        overflow: hidden;
+        width:1000px;
+    }
+    
+}

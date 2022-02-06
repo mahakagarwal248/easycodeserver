@@ -46,3 +46,18 @@
     text-align: center;
     margin-right: 40px;
 }
+
+@media only screen and (max-width:780px) {
+    .navbar{
+        width: max-content;
+    }
+    .title > h3{
+        margin-right: 50px;
+    }
+    .title > a{
+        margin-right: 30px;
+    }
+    .contents {
+        margin-left: 150px;
+    }
+}

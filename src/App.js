@@ -1,7 +1,8 @@
 import './App.css';
-import Footer from './components/Footer';
-import Homepage from './components/Homepage';
-import Navbar from './components/Navbar';
+import "./App.css";
+import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
+import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Demofirst } from "./catalogue/sites/Demofirst";
 import { Demosecond } from "./catalogue/sites/Demosecond";

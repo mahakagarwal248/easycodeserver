@@ -16,7 +16,7 @@ function LoginForm1() {
                     <br/>
                     <LockOpenIcon className="icon"/><input type="password" placeholder="Password"/>
                     <div className="lf1d">
-                        <input type="checkbox"/><span>Remember Me</span><span id="span">Forgot password?</span>
+                        <input type="checkbox" /><span>Remember Me</span><span id="span">Forgot password?</span>
                     </div>
                 </form>
             </div>

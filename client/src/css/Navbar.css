@@ -6,7 +6,7 @@
     padding: 12px;
     color: black;
     display: flex;
-    background-color: white;
+
 }
 .title{
     display: flex;
@@ -39,12 +39,12 @@
 .contents > .btn{
     border: 2px solid black;
     border-radius: 25px;
-    padding: 5px 15px;
-    background-color: #2753DD;
-    color: white;
+    padding: 5px 20px;
+    background-color: #0c0fbe;
     font-size: 18px;
     text-align: center;
     margin-right: 40px;
+    text-decoration: none;
 }
 
 @media only screen and (max-width:780px) {

@@ -190,7 +190,7 @@ function Homepage() {
             </button>
             <p>
               Or, take a peek in our{" "}
-              <a href="/" style={{ fontWeight: "bold" }}>
+              <a href="/" style={{ fontWeight: "bold",color:'#6610f2',textDecoration:'underline' }}>
                 design studio
               </a>
             </p>

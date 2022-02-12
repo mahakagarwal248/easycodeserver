@@ -15,7 +15,7 @@ function Navbar() {
         </div>
         <div className="contents">
           <button className="btn">
-            <Link to="/contactus">Contact us</Link>
+            <Link to="/contactus" style={{color:'white'}}>Contact us</Link>
           </button>
         </div>
       </div>

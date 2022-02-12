@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 .s1{
     margin: 0px 0px;
     background: url("../images/30668.jpg");
@@ -17,8 +19,9 @@
     font-size: 18px;
 }
 .s1content > h1{
-    width: 400px;
-    font-weight: bold;
+    width: 600px;
+    font-weight: 500;
+    font-style: italic;
 }
 .s1content > .btn{
     border: 2px solid black;
@@ -109,6 +112,7 @@
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: bold;
+    font-family: 'PT Serif', serif;
 }
 .d1 > p, .d2 >p, .d3 > p{
     margin-top: 10px;

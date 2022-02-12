@@ -13,7 +13,7 @@ function Homepage() {
       <section className="s1">
         <div className="s1content">
           <p>Solution for your Website related problems.</p>
-          <h1>A company to take away your worries</h1>
+          <h1>We design and develop experiences that make people's lives <b>simple</b>.</h1>
           <button className="btn">Free consultation</button>
         </div>
       </section>

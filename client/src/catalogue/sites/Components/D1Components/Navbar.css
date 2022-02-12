@@ -2,14 +2,18 @@
     top: 50px;
     z-index: 4;
     padding-top: 0px;
-    padding-bottom: 0px;
-    height: 76px;
+    height: 75px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: white;
 }
 .logo {
     font-weight: bolder;
     font-size: larger;
     flex: 0.4;
     text-align: center;
+    margin: auto;
 }
 .logo:hover{
     cursor: pointer;

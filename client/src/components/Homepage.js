@@ -158,8 +158,8 @@ function Homepage() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Title1</h5>
-                <p>description1</p>
+                <h5>Title3</h5>
+                <p>description3</p>
               </div>
             </Link>
 
@@ -170,8 +170,8 @@ function Homepage() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Title2</h5>
-                <p>description2</p>
+                <h5>Title4</h5>
+                <p>description4</p>
               </div>
             </Link>
           </div>

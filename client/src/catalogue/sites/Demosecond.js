@@ -1,16 +1,16 @@
 import React from "react";
-import LoginForm1 from "./Components/D2Components/Loginform1/LoginForm1";
-import LoginForm2 from "./Components/D2Components/Loginform2/LoginForm2";
-import LoginForm3 from "./Components/D2Components/Loginform3/LoginForm3";
-import LoginForm4 from "./Components/D2Components/Loginform4/LoginForm4";
+import Section1 from "./Components/D2Components/section1/Section1";
+import Section2 from "./Components/D2Components/section2/Section2";
+import Section3 from "./Components/D2Components/section3/Section3";
+import Section4 from "./Components/D2Components/section4/Section4";
 
 export const Demosecond = () => {
   return (
     <div>
-      <LoginForm1/>
-      <LoginForm2/>
-      <LoginForm3/>
-      <LoginForm4/>
+      <Section1/>
+      <Section2/>
+      <Section3/>
+      <Section4/>
     </div>
   );
 };

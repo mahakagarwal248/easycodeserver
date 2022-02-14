@@ -7,7 +7,7 @@ function Navbar() {
     <div>
       <div className="navbar">
         <div className="title">
-          <h3>YourDesigner</h3>
+          <h3>EasyCoding</h3>
           <a href="/">Home</a>
           <a href="#services">Our Services</a>
           <a href="#about">About us</a>

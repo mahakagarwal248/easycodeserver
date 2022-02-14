@@ -53,7 +53,7 @@ function Homepage() {
         </div>
         <div>
           <img
-            src="https://devforce.com/wp-content/uploads/2021/02/45.png"
+            src="https://images.squarespace-cdn.com/content/v1/58d3660a6a49630cabbf9f96/1495129362104-BHGN5RGS6KPKPEBPC44H/image-asset.png"
             alt="NodeJs"
           />
         </div>

@@ -9,31 +9,34 @@ import { Demosecond } from "./catalogue/sites/Demosecond";
 import { Demothird } from "./catalogue/sites/Demothird";
 import { Demofourth } from "./catalogue/sites/Demofourth";
 import ContactForm from "./components/ContactForm/ContactForm";
+import WorkingState from "./contexts/workngalert/workingstate";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <div className="App">
-                <Navbar />
-                <Homepage />
-                <Footer />
-              </div>
-            }
-          ></Route>
-          <Route path="/contactus" element={<ContactForm />} />
-          <Route exact path="/demo">
-            <Route path="/demo/site1" element={<Demofirst />} />
-            <Route path="/demo/site2" element={<Demosecond />} />
-            <Route path="/demo/site3" element={<Demothird />} />
-            <Route path="/demo/site4" element={<Demofourth />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <WorkingState>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                <div className="App">
+                  <Navbar />
+                  <Homepage />
+                  <Footer />
+                </div>
+              }
+            ></Route>
+            <Route path="/contactus" element={<ContactForm />} />
+            <Route exact path="/demo">
+              <Route path="/demo/site1" element={<Demofirst />} />
+              <Route path="/demo/site2" element={<Demosecond />} />
+              <Route path="/demo/site3" element={<Demothird />} />
+              <Route path="/demo/site4" element={<Demofourth />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </WorkingState>
     </>
   );
 }

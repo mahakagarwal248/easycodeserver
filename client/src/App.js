@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Demofirst } from "./catalogue/sites/Demofirst";
 import { Demosecond } from "./catalogue/sites/Demosecond";
 import { Demothird } from "./catalogue/sites/Demothird";
-import { Demofourth } from "./catalogue/sites/Demofourth";
 import ContactForm from "./components/ContactForm/ContactForm";
 import WorkingState from "./contexts/workngalert/workingstate";
 function App() {
@@ -32,7 +31,6 @@ function App() {
               <Route path="/demo/site1" element={<Demofirst />} />
               <Route path="/demo/site2" element={<Demosecond />} />
               <Route path="/demo/site3" element={<Demothird />} />
-              <Route path="/demo/site4" element={<Demofourth />} />
             </Route>
           </Routes>
         </BrowserRouter>

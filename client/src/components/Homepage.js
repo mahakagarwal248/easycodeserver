@@ -13,7 +13,10 @@ function Homepage() {
       <section className="s1">
         <div className="s1content">
           <p>Solution for your Website related problems.</p>
-          <h1>We design and develop experiences that make people's lives <b>simple</b>.</h1>
+          <h1>
+            We design and develop experiences that make people's lives{" "}
+            <b>simple</b>.
+          </h1>
           <button className="btn">Free consultation</button>
         </div>
       </section>
@@ -163,8 +166,7 @@ function Homepage() {
               </div>
             </Link>
 
-            <Link to="/demo/site4">
-              {" "}
+            <a href="https://quoraclone-c9aa3.web.app/">
               <div className="s4d2d2">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
@@ -173,7 +175,7 @@ function Homepage() {
                 <h5>Title4</h5>
                 <p>description4</p>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
         <button className="btn">
@@ -190,7 +192,14 @@ function Homepage() {
             </button>
             <p>
               Or, take a peek in our{" "}
-              <a href="/" style={{ fontWeight: "bold",color:'#6610f2',textDecoration:'underline' }}>
+              <a
+                href="/"
+                style={{
+                  fontWeight: "bold",
+                  color: "#6610f2",
+                  textDecoration: "underline",
+                }}
+              >
                 design studio
               </a>
             </p>

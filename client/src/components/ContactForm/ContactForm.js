@@ -50,47 +50,67 @@ const ContactForm = () => {
         <>
           <Navbar />
           <div className={style.firstdiv}>
-            <form method="POST">
-              <label htmlFor="name">full name:</label>
+            <h1 className={style.h1}>Get in Touch!</h1>
+            <form method="POST" className={style.form}>
+              <label htmlFor="name" className={style.label}>Full name:</label>
               <br />
               <input
+                
+                className={style.contactForm}
                 type="text"
+                placeholder="Enter Name"
                 value={FormData.name}
                 onChange={(event) => handleonchange(event, "name")}
                 id="name"
                 name="fname"
               />
               <br />
-              <label htmlFor="email">Your email</label>
+              <label htmlFor="email" className={style.label}>Email:</label>
               <br />
               <input
+                className={style.contactForm}
                 type="email"
                 onChange={(event) => handleonchange(event, "email")}
-                placeholder="example@gmai.com"
+                placeholder="example@gmail.com"
+                value={FormData.email}
+                id="email"
+                name="lname"
+              />
+              <br />
+              <label htmlFor="email" className={style.label}>Mobile Number:</label>
+              <br />
+              <input
+                className={style.contactForm}
+                type="phone"
+                onChange={(event) => handleonchange(event, "email")}
+                placeholder="Enter Mobile Number"
                 value={FormData.email}
                 id="email"
                 name="lname"
               />
               <br />
 
-              <label htmlFor="textarea">your message:</label>
+              <label htmlFor="textarea" className={style.label}>Your query:</label>
               <br />
               <textarea
                 className={style.mytextarea}
                 onChange={(event) => handleonchange(event, "msg")}
                 cols="2"
+                placeholder="Enter your query here"
                 id="textarea"
                 rows="3"
                 value={FormData.msg}
               ></textarea>
-            </form>
-            <button
+              <button
+            className={style.button}
               onClick={() => {
                 onsubmit();
               }}
             >
-              send
+              Submit
             </button>
+            </form>
+            
           </div>
         </>
       )}

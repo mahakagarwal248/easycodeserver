@@ -19,10 +19,14 @@ const sendingmail = (req, res, next) => {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      return res.json({ err: error.message });
+      return res.json({ err: error.message, result: false });
     } else {
       console.log("sending");
-      return res.json({ result: "send", resultinfo: info.response });
+      return res.json({
+        result: "send",
+        resultinfo: info.response,
+        result: true,
+      });
     }
   });
 };

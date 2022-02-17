@@ -1,5 +1,5 @@
 .navbar {
-  position: absolute;
+  position: fixed;
   height: 85px;
   width: 100%;
   top: 0;
@@ -9,13 +9,6 @@
 }
 .title {
   display: flex;
-}
-.title > h3 {
-  display: flex;
-  font-size: 28px;
-  margin-right: 100px;
-  margin-left: 24px;
-  font-weight: bold;
 }
 .title > a {
   text-decoration: none;
@@ -36,7 +29,7 @@
   display: flex;
 }
 .contents > .btn {
-  border: 2px solid black;
+  border: 2px solid #035473;
   border-radius: 25px;
   padding: 5px 20px;
   background-color: #408ba8;
@@ -47,12 +40,15 @@
 }
 .hoverclass1 {
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 25px;
 }
 .hoverclass1:hover {
   background-color: #408ba8;
   color: white;
-  border: 1px solid black;
+  border: 2px solid #035473;
+}
+.navactive {
+  background-color: white;
 }
 @media only screen and (max-width: 780px) {
   .navbar {
@@ -67,4 +63,12 @@
   .contents {
     margin-left: 150px;
   }
+}
+
+.title > h3 {
+  display: flex;
+  font-size: 28px;
+  margin-right: 100px;
+  margin-left: 24px;
+  font-weight: bold;
 }

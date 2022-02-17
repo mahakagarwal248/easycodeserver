@@ -1,5 +1,5 @@
 import "./App.css";
-import "./App.css";
+import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
@@ -9,7 +9,16 @@ import { Demosecond } from "./catalogue/sites/Demosecond";
 import { Demothird } from "./catalogue/sites/Demothird";
 import ContactForm from "./components/ContactForm/ContactForm";
 import WorkingState from "./contexts/workngalert/workingstate";
+import Spinner from "./components/Spinner/Spinner";
 function App() {
+  const [loading, setloading] = useState(false);
+  useEffect(() => {
+    setloading(true);
+    setTimeout(() => {
+      setloading(false);
+    }, 3000);
+  }, []);
+
   return (
     <>
       <WorkingState>
@@ -19,11 +28,15 @@ function App() {
               exact
               path="/"
               element={
-                <div className="App">
-                  <Navbar />
-                  <Homepage />
-                  <Footer />
-                </div>
+                loading ? (
+                  <Spinner loading={loading} />
+                ) : (
+                  <div className="App">
+                    <Navbar />
+                    <Homepage />
+                    <Footer />
+                  </div>
+                )
               }
             ></Route>
             <Route path="/contactus" element={<ContactForm />} />

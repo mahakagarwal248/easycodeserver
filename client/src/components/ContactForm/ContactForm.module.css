@@ -1,0 +1,72 @@
+.firstdiv {
+  height: 60%;
+  width: 30%;
+  margin: auto;
+  margin-top: 12vh;
+  background-color: #408ba8;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.form {
+  width: 100%;
+}
+.h1 {
+  color: #05384d;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.mytextarea {
+  border: 2px solid rgb(56, 56, 56);
+  width: 100%;
+  margin: 5px 0;
+  padding: 3px;
+  border-radius: 5px;
+}
+.contactForm {
+  border-radius: 5px;
+  height: 50px;
+  border: 2px solid #035473;
+  width: 100%;
+}
+.contactForm:hover {
+  cursor: text;
+}
+.mytextarea:hover {
+  cursor: text;
+}
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #05384d;
+}
+.button {
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: #05384d;
+  color: white;
+  margin: auto;
+  width: 100px;
+  margin-top: 15px;
+  display: block;
+}
+.iconclass {
+  font-size: 30px;
+}
+.empty {
+  border-radius: 5px;
+  height: 50px;
+  border: 2px solid red;
+  width: 100%;
+}
+.emptytextarea {
+  border: 2px solid red;
+  width: 100%;
+  margin: 5px 0;
+  padding: 3px;
+  border-radius: 5px;
+}

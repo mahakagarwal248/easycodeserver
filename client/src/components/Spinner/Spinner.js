@@ -10,7 +10,7 @@ const Spinner = (props) => {
   `;
 
   return (
-    <>
+    <div className={style.CompSpinner}>
       <h1 id={style.msgid}>{props.msg}</h1>
       <div className={style.mainclass}>
         <div className={style.spinnerclass}>
@@ -19,11 +19,12 @@ const Spinner = (props) => {
             css={override}
             loading={props.loading}
             size={150}
+            className={style.CompHash}
           />
         </div>
         <h1 className={style.logoclass}>EasyCoder...</h1>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -20,7 +20,7 @@ function Navbar() {
           <h3>
             <Link to="/" className="link">EasyCoder</Link>
           </h3>
-
+          <div>
           <Link to="/#s1" className="hoverclass1">
             Home
           </Link>
@@ -33,6 +33,8 @@ function Navbar() {
           <a href="/#catalogue" className="hoverclass1">
             Catalogue
           </a>
+          </div>
+          
         </div>
         <div className="contents">
           <button className="btn">

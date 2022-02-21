@@ -133,11 +133,11 @@ const ContactForm = () => {
               <br />
               <input
                 className={Enumber ? style.empty : style.contactForm}
-                type="phone"
+                type="tel"
                 onChange={(event) => handleonchange(event, "number")}
                 placeholder={defaultnumber}
                 value={FormData.number}
-                id="email"
+                id="number"
                 name="lname"
               />
               <br />
@@ -162,9 +162,9 @@ const ContactForm = () => {
               <input
                 className={style.file}
                 type="file"
-                onChange={(event) => handleonchange(event, "number")}
+                //onChange={(event) => handleonchange(event, "number")}
                 placeholder={defaultnumber}
-                value={FormData.number}
+                //value={FormData.number}
                 id="file"
                 name="file"
               />

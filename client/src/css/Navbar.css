@@ -10,7 +10,7 @@
 .title {
   display: flex;
 }
-.title > a {
+.title > div > a {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -46,26 +46,25 @@
 .hoverclass1:hover {
   /* background-color: #408ba8; */
   /* color: white; */
-  border: 3px solid #035473;
-  -moz-box-shadow: 0 0 5px #999;
-    -webkit-box-shadow: 0 0 5px #999;
-    box-shadow: 0 0 5px #999;
+  border: 2px solid #035473;
 }
 .navactive {
   background-color: white;
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 420px) {
   .navbar {
-    width: max-content;
+   height: auto;
+   padding: 0px;
+   padding-top: 15px;
   }
-  .title > h3 {
-    margin-right: 50px;
+  .title > h3 > .link {
+    margin: 0px;
   }
-  .title > a {
-    margin-right: 30px;
+  .title > div  {
+    display: none;
   }
   .contents {
-    margin-left: 150px;
+    display: none;
   }
 }
 
@@ -75,9 +74,9 @@
   margin: auto;
   margin-right: 100px;
   margin-left: 24px;
-  font-weight: bold;
 }
 .link{
   color: #408ba8;
   font-family: 'Domine', serif;
+  font-weight: 900;
 }

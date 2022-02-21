@@ -41,10 +41,25 @@
     font-weight: 600;
 }
 
-@media only screen and (max-width:780px) {
+@media only screen and (max-width:420px) {
     .footer{
         overflow: hidden;
-        width:1000px;
+        width:100%;
     }
-    
+    .fd{
+        flex-direction: column;
+    }
+    .fd1,.fd2,.fd3{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .fd2,.fd3{
+        padding-left: 0px;
+    }
+    .fd3{
+        text-align: left;
+    }
+    .fd3>.icons{
+        margin-left: 0;
+    }
 }

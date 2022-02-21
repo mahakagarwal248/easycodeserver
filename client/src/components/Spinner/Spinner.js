@@ -21,7 +21,7 @@ const Spinner = (props) => {
             size={150}
           />
         </div>
-        <h1 className={style.logoclass}>Easycoding...</h1>
+        <h1 className={style.logoclass}>EasyCoder...</h1>
       </div>
     </>
   );

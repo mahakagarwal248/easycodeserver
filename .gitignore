@@ -12,7 +12,7 @@ client/node_modules
 /build
 
 /client/node_modules
-
+config.env
 # misc
 .DS_Store
 .env.local

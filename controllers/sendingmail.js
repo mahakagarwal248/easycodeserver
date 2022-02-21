@@ -9,10 +9,6 @@ const sendingmail = (req, res, next) => {
       pass: PASS,
     },
   });
-<<<<<<< HEAD
-
-=======
->>>>>>> 147c271f02c60f22e9294001c003ff83b29d17ad
   var mailOptions = {
     from: "easycoding2000@gmail.com",
     to: ["bhomickyadav786@gmail.com", "mahakagarwal248@gmail.com"],
@@ -25,10 +21,7 @@ const sendingmail = (req, res, next) => {
       return res.json({ err: error.message, result: false });
     } else {
       return res.json({
-<<<<<<< HEAD
         result: "send",
-=======
->>>>>>> 147c271f02c60f22e9294001c003ff83b29d17ad
         resultinfo: info.response,
         result: true,
       });

@@ -5,13 +5,21 @@
 .pnp
 .pnp.js
 client/node_modules
+<<<<<<< HEAD
 client/build
+=======
+>>>>>>> 147c271f02c60f22e9294001c003ff83b29d17ad
 # testing
 /coverage
 
 # production
 /build
 
+<<<<<<< HEAD
+=======
+/client/node_modules
+config.env
+>>>>>>> 147c271f02c60f22e9294001c003ff83b29d17ad
 # misc
 .DS_Store
 .env.local

@@ -155,6 +155,20 @@ const ContactForm = () => {
                 rows="3"
                 value={FormData.msg}
               ></textarea>
+              <label htmlFor="email" className={style.label}>
+                Upload File:
+              </label>
+              <br />
+              <input
+                className={style.file}
+                type="file"
+                onChange={(event) => handleonchange(event, "number")}
+                placeholder={defaultnumber}
+                value={FormData.number}
+                id="file"
+                name="file"
+              />
+              <br />
               <button
                 className={style.button}
                 onClick={(event) => onsubmit(event)}

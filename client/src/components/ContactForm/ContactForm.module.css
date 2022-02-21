@@ -1,6 +1,6 @@
 .firstdiv {
   height: 60%;
-  width: 30%;
+  width: 35%;
   margin: auto;
   margin-top: 12vh;
   background-color: #408ba8;
@@ -55,18 +55,31 @@
   display: block;
 }
 .iconclass {
-  font-size: 30px;
+  font-size: 32px;
 }
 .empty {
   border-radius: 5px;
   height: 50px;
-  border: 2px solid red;
+  border: 2.3px solid rgb(211, 0, 0);
   width: 100%;
 }
 .emptytextarea {
-  border: 2px solid red;
+  border: 2.3px solid rgb(211, 0, 0);
   width: 100%;
   margin: 5px 0;
   padding: 3px;
   border-radius: 5px;
+}
+.file{
+  padding: 0px;
+  font-size: 20px;
+  border: 1px solid #035473;
+  border-radius: 5px;
+}
+.file::-webkit-file-upload-button{
+  border: 1px solid black;
+  font-size: 22px;
+  padding: 1px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
 }

@@ -18,12 +18,12 @@ function Navbar() {
       <div className={navcss ? "navbar navactive" : "navbar"}>
         <div className="title">
           <h3>
-            <Link to="/">EasyCoding</Link>
+            <Link to="/" className="link">EasyCoder</Link>
           </h3>
 
-          <a href="/" className="hoverclass1">
+          <Link to="/#s1" className="hoverclass1">
             Home
-          </a>
+          </Link>
           <a href="/#services" className="hoverclass1">
             Our Services
           </a>

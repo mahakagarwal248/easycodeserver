@@ -12,7 +12,7 @@ function Homepage() {
 
   return (
     <div className="homepage">
-      <section className="s1">
+      <section className="s1" id="s1">
         <div className="s1content">
           <p>Solution for your Website related problems.</p>
           <h1>
@@ -130,7 +130,7 @@ function Homepage() {
           </p>
 
           <button className="btn">
-            <Link to="/contactus">What we can do for you</Link>
+            <Link to="/contactus" style={{color:'white'}}>What we can do for you</Link>
           </button>
         </div>
       </section>

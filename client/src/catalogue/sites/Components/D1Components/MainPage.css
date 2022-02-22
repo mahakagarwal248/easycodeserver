@@ -2,7 +2,6 @@
     background: url("https://imageio.forbes.com/specials-images/imageserve/61cdd9ec2bbdedb659077751/Neutral-living-color-corrected/960x0.jpg?fit=bounds&format=jpg&width=960");
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
 .ds1{
     opacity: 0.8;
@@ -202,4 +201,22 @@ input{
     cursor: pointer;
     background-color: tomato;
     color: white;
+}
+@media (max-width:420px) {
+    .mains1{
+        background: none;
+    }
+    .d1s1d2{
+        display: none;
+    }
+    .d1s1d1d1{
+        transform: none;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .d1s1d{
+        flex-direction: column;
+        width: 50%;
+    }
 }

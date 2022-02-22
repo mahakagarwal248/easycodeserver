@@ -38,3 +38,11 @@
 
   z-index: 5;
 }
+@media (max-width:720px) {
+  .d1navbar{
+    width: 100%;
+  }
+  .D1navcontents{
+    display: none;
+  }
+}

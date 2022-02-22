@@ -58,22 +58,26 @@ const ContactForm = () => {
     const { name, email, number, msg } = FormData;
     if (name && email && number && msg) {
       try {
-        setloading(true);
-        const responce = await fetch("/contactus/mail", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(FormData),
-        });
-        const data = await responce.json();
+        if (!isNaN(parseInt(FormData.number))) {
+          setloading(true);
+          const responce = await fetch("/contactus/mail", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(FormData),
+          });
+          const data = await responce.json();
 
-        if (data.result) {
-          setloading(false);
-          navigate("/");
-          mycontext.customtoast("message send", "success");
+          if (data.result) {
+            setloading(false);
+            navigate("/");
+            mycontext.customtoast("message send", "success");
+          } else {
+            mycontext.customtoast("Error 404 Msg is not send", "error");
+          }
         } else {
-          mycontext.customtoast("Error 404 Msg is not send", "error");
+          mycontext.customtoast("Mobile Number:Invalid", "error");
         }
       } catch (error) {
         setloading(false);

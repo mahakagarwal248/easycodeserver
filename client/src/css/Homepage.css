@@ -288,16 +288,15 @@
         width: 100%;
         margin: auto;
         background: none;
-        margin: 0;
         height: auto;
-        margin-top: 50px;
+        margin-top: 60px;
     }
     .s1content{
         width: 100%;
-        margin-left: 10px;
-        padding: 10px;
+        padding: 50px;
         padding-top: 50px;
         text-align: center;
+        background-color: #e6ffff;
     }
     .s1content > h1{
         width: 100%;
@@ -323,6 +322,7 @@
     }
     .d1,.d2,.d3{
         margin: auto;
+        margin-bottom: 20px;
     }
     .s3{
         flex-direction: column;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -20,7 +19,7 @@ function Navbar() {
           <h3>
             <Link to="/" className="link">EasyCoder</Link>
           </h3>
-          <div>
+          <div className="navbar-collapse">
           <Link to="/#s1" className="hoverclass1">
             Home
           </Link>

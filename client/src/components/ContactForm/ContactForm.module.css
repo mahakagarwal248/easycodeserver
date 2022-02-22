@@ -84,3 +84,11 @@
   border-radius: 4px;
   margin-right: 10px;
 }
+@media (max-width:720px) {
+  .firstdiv{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 12vh;
+  }
+}

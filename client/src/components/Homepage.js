@@ -187,7 +187,12 @@ function Homepage() {
             </a>
           </div>
         </div>
-        <button className="btn">
+        <button className="btn" onClick={() => {
+                  mycontext.customtoast(
+                    "website in development state ",
+                    "warn"
+                  );
+                }}>
           See More <ArrowRightAltIcon className="arrow" />
         </button>
       </section>

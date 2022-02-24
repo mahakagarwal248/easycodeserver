@@ -1,5 +1,4 @@
 .demo2s2{
-
     padding-bottom: 10px;
 }
 .demo2s2d1{
@@ -13,4 +12,13 @@
     font-size: 64px;
     font-weight: bold;
     font-style: italic;
+}
+@media (max-width:720px) {
+    .demo2s2{
+        width: 100%;
+    }
+    .demo2s2 > section{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 }

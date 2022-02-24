@@ -48,3 +48,12 @@ span > img{
     border: 2px solid rgb(21, 21, 109);
     font-weight: 600;
 }
+@media (max-width:420px) {
+    .loginform3 > div,.lf3d,.lf3d>form{
+        width: 100%;
+        text-align: center;
+    }
+    .loginform3 > .lf3d > form > h3{
+        width: 100%;
+    }
+}

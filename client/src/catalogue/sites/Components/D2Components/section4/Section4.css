@@ -13,3 +13,9 @@
     font-weight: bold;
     font-style: italic;
 }
+@media (max-width:420px) {
+    .demo2s4 > section{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}

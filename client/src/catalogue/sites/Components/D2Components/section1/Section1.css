@@ -29,3 +29,12 @@
 .demo2s1d2{
     flex: 0.5;
 }
+@media (max-width:420px) {
+    .demo2s1{
+        width: 100%;
+    }
+    .demo2s1 > section{
+        flex-direction: column;
+        width: 100%;
+    }
+}

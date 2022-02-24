@@ -196,3 +196,28 @@
 .d3s1d5{
     margin-top: 32%;
 }
+
+@media (max-width:420px) {
+  .d3section1{
+    width: 100%;
+    justify-content: left;
+  }
+  .d3s1d1 ,.d3s1d2,.d3s1d3,.d3s1d4,.d3s1d5{
+    width: 20%;
+  }
+  .d3s1d1 > h1 ,.d3s1d2 > h1,.d3s1d3 > h1,.d3s1d4 > h1,.d3s1d5 > h1{
+    font-size: 20px;
+  }
+  .d3s1d2{
+    margin-top: 10%;
+  }
+  .d3s1d3{
+    margin-top: 20%;
+  }
+  .d3s1d4{
+    margin-top: 30%;
+  }
+  .d3s1d5{
+    margin-top: 40%;
+  }
+}

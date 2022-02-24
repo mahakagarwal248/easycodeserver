@@ -9,3 +9,9 @@
 .demo2s3d2{
     flex: 0.5;
 }
+@media (max-width:720px) {
+    .demo2s3>section{
+        flex-direction: column;
+        width: 100%;
+    }
+}

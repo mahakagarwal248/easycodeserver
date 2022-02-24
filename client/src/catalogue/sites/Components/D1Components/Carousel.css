@@ -10,7 +10,7 @@
 @media (max-width:420px) {
     .carousel {
         width: 92%;
-        margin-left:30px;
+        margin:auto;
     }
     .carouselcaption{
         margin: auto;

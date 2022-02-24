@@ -207,9 +207,6 @@ input{
         width: 100%;
         overflow-x: hidden;
     }
-    .mains1{
-        background: none;   
-    }
     .ds1 > p , .ds1 > span{
         margin-right: 10px;
     }
@@ -259,6 +256,9 @@ input{
     }
     .d1s4d1 > p,.d1s4d2 > img,.d1s4d1>h2 > br{
         display: none;
+    }
+    .d1s4d2 > form{
+        flex: 1;
     }
     .d1s5, .d1s5 >div{
         width: 100%;

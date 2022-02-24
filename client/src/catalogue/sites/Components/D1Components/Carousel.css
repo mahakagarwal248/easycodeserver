@@ -1,0 +1,19 @@
+.carouselcaption{
+    width: 350px;
+    text-align: left;
+    margin: auto;
+    padding: 20px 10px;
+    background-color: tomato;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+@media (max-width:420px) {
+    .carousel {
+        width: 92%;
+        margin-left:30px;
+    }
+    .carouselcaption{
+        margin: auto;
+        width: 300px;
+    }
+}

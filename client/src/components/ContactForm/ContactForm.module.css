@@ -24,16 +24,25 @@
   margin: 5px 0;
   padding: 3px;
   border-radius: 5px;
+  padding-left: 18px;
+  font-size: 16px;
+  color: #000;
 }
 .contactForm {
   border-radius: 5px;
   height: 50px;
   border: 2px solid #035473;
   width: 100%;
+  font-size: 16px;
+  color: black;
 }
 .contactForm:hover {
   cursor: text;
 }
+.contactForm::-webkit-input-placeholder,.mytextarea::-webkit-input-placeholder{
+  font-size: 16px;
+}
+
 .mytextarea:hover {
   cursor: text;
 }
@@ -54,6 +63,11 @@
   width: 100px;
   margin-top: 15px;
   display: block;
+  border: 2px solid transparent;
+}
+.button:hover{
+  border: 2px solid #05384d;
+  background-color: #035473;
 }
 .iconclass {
   font-size: 32px;

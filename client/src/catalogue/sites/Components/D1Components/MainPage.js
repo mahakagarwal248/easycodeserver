@@ -101,7 +101,7 @@ function MainPage() {
           </p>
         </div>
         <div className="d1s2d2">
-          <CompCarousel />
+          <CompCarousel className="compcarousel" />
         </div>
       </section>
       <section className="d1s3">

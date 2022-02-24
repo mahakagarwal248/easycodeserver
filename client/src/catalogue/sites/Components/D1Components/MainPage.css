@@ -202,21 +202,62 @@ input{
     background-color: tomato;
     color: white;
 }
-@media (max-width:420px) {
+@media (max-width:720px) {
     .mains1{
         background: none;
+        
+    }
+    .ds1 > p , .ds1 > span{
+        margin-right: 10px;
+    }
+    .d1s1d1{
+        flex: none;
+        text-align: center;
+        width: 100%;
     }
     .d1s1d2{
         display: none;
     }
     .d1s1d1d1{
         transform: none;
-        text-align: center;
         margin: auto;
-        width: 100%;
+        width: 90%;
     }
     .d1s1d{
         flex-direction: column;
-        width: 50%;
+        width: 80%;
+    }
+    .d1s2 > p, .d1s2d1>h2{
+        margin-left: 30px;
+    }
+    
+    .d1s2d1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .d1s2d1 >p{
+        display: none;
+    }
+    .d1s3, .d1s3 > div{
+        width: 100%;
+    }
+    .d1s3 > div > p, .d1s3d1, .d1s4 > p, .d1s4d1 > h2, .d1s5>div>p, .d1s5>div>h2{
+        margin-left: 30px;
+    }
+    .d1s3d2{
+        flex-direction: column;
+    }
+    .d1s3d2 > div{
+        margin-left: 30px;
+        width: 80%;
+    }
+    .d1s4, .d1s2{
+        width: 100%;
+    }
+    .d1s4d1 > p,.d1s4d2 > img,.d1s4d1>h2 > br{
+        display: none;
+    }
+    .d1s5, .d1s5 >div{
+        width: 100%;
     }
 }

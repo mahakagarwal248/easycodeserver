@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import "../css/Navbar.css";
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -22,18 +23,23 @@ function Navbar() {
   }, [])
   return (
     <nav>
-      <h2>EasyCoder</h2>
+      <h2><a href="/">EasyCoder</a></h2>
       {(toggleMenu || screenWidth > 500) && (
       <ul className="list">
-        <li className="items">Home</li>
-        <li className="items">Our Services</li>
-        <li className="items">About Us</li>
-        <li className="items">Catalouge</li>
-        <button className="items">Contact Us</button>
+        <li className="items"><a href="/">Home</a></li>
+        <li className="items"><a href="/#services">Our Services</a></li>
+        <li className="items"><a href="/#about">About Us</a></li>
+        <li className="items"><a href="/#catalogue">Catalogue</a></li>
+        <hr/>
+        <button className="items">
+          <Link to="/contactus" style={{color:'white'}}>
+            Contact Us 
+          </Link>
+        </button>
       </ul>
       )}
 
-      <button onClick={toggleNav} className="navbtn"><DehazeIcon style={{verticalAlign:'middle'}}/></button>
+      <button onClick={toggleNav} className="navbtn"><DehazeIcon style={{verticalAlign:'middle', color:'#035473'}}/></button>
     </nav>
   );
 }

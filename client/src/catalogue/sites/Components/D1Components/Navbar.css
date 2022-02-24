@@ -41,6 +41,7 @@
 @media (max-width:720px) {
   .d1navbar{
     width: 100%;
+    height: 55px;
   }
   .D1navcontents{
     display: none;

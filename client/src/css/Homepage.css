@@ -8,6 +8,7 @@
     background-position-x: right;
     background-size: cover;
     height: 800px;
+    margin-top: 60px;
 }
 .s1content{
     padding: 200px;
@@ -281,9 +282,7 @@
 }
 
 @media only screen and (max-width:420px) {
-    .homepage{
-        padding: 10px;
-    }
+    
     .s1{
         width: 100%;
         margin: auto;
@@ -315,6 +314,10 @@
     .s2 > h1{
         width: 420px;
         font-size: 34px;
+        padding-left: 5px;
+    }
+    .s2>h4{
+        margin-left: 5px;
     }
     .s2d{
         flex-direction: column;

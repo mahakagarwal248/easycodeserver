@@ -2,11 +2,13 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import './Swiper.css'
 
 function CompSwiper() {
     return (
         <div style={{color:'white'}}>
             <Swiper
+                className="compswiper"
                 spaceBetween={50}
                 slidesPerView={3}
                 onSlideChange={() => console.log('slide change')}

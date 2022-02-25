@@ -24,7 +24,7 @@ function Footer() {
             <a href="https://www.instagram.com/easycoding._/">
               <InstagramIcon style={{ fontSize: 32, marginRight: 10 }} />
             </a>
-            <a>
+            <a href="https://www.linkedin.com/in/mahakagarwal248/">
               <LinkedInIcon style={{ fontSize: 32 }} />
             </a>
           </div>

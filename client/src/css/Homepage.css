@@ -25,11 +25,11 @@
     font-style: italic;
 }
 .s1content > .btn{
-    border: 2px solid black;
+    border: 2px solid #035473;
+    background-color: #408ba8;
     border-radius: 25px;
     margin-top: 30px;
     padding: 10px 25px;
-    background-color: #408ba8;
     color: white;
     font-size: 20px;
 }
@@ -152,7 +152,7 @@
     margin-bottom: 40px;
 }
 .s3d2 > .btn{
-    border: 2px solid black;
+    border: 2px solid #092986;
     border-radius: 25px;
     margin-top: 30px;
     padding: 10px 25px;
@@ -199,8 +199,11 @@
     box-shadow: 0 0 5px #999;
     border-radius: 10px;
 }
-.s4d1d1, .s4d1d2, .s4d2d1, .s4d2d2:hover{
+.s4d1d1:hover, .s4d1d2:hover, .s4d2d1:hover, .s4d2d2:hover{
     cursor: pointer;
+    -moz-box-shadow: 0 0 25px #999;
+    -webkit-box-shadow: 0 0 52px #999;
+    box-shadow: 0 0 25px #999;
 }
 .s4d1d1 > img ,.s4d1d2 > img{
     height: 250px;
@@ -262,10 +265,10 @@
     color: #000080;
 }
 .s5d1 > .btn{
-    border: 2px solid black;
+    border: 2px solid #092986;
     border-radius: 25px;
     padding: 10px 25px;
-    background-color: #4d4dff;
+    background-color: #2753DD;
     color: white;
     font-size: 15px;
     text-align: center;

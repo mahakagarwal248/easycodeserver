@@ -46,9 +46,6 @@ nav > ul{
   border: 2px solid #035473;
   padding: 5px 15px;
   border-radius: 25px;
-  -moz-box-shadow: 0 0 10px rgb(18, 66, 99);
-  -webkit-box-shadow: 0 0 10px rgb(18, 66, 99);
-  box-shadow: 0 0 10px rgb(18, 66, 99);
 }
 .list>hr{
   display: none;
@@ -102,11 +99,10 @@ nav > ul{
         border-top: 1px solid rgba(255, 255, 255, 0.555);
         border-bottom: 1px solid rgba(255, 255, 255, 0.555);
         text-align: center;
-        padding: 20px 0;
+        padding: 15px 0;
     }
     .items:hover{
       border: none;
-      box-shadow: none;
       cursor: pointer;
       line-height: 52px;
     }
@@ -123,5 +119,6 @@ nav > ul{
     .list > button{
       background-color: transparent;
       margin-bottom: 10px;
+      padding:15px 0;
     }
 }

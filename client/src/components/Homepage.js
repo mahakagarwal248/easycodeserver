@@ -147,8 +147,8 @@ function Homepage() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Title1</h5>
-                <p>description1</p>
+                <h5>Demo 1</h5>
+                <p>It is an Architect's Website.</p>
               </div>
             </Link>
             <Link to="demo/site2">
@@ -157,8 +157,8 @@ function Homepage() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Title2</h5>
-                <p>description2</p>
+                <h5>Demo 2</h5>
+                <p>It has some different kinds of Login Forms.</p>
               </div>
             </Link>
           </div>
@@ -170,8 +170,8 @@ function Homepage() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Title3</h5>
-                <p>description3</p>
+                <h5>Demo 3</h5>
+                <p>This one has some type of designing elements which can be used anywhere.</p>
               </div>
             </Link>
 
@@ -181,8 +181,8 @@ function Homepage() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Title4</h5>
-                <p>description4</p>
+                <h5>Demo 4</h5>
+                <p>It is the quora-clone.</p>
               </div>
             </a>
           </div>

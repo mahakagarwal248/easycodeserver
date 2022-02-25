@@ -35,7 +35,7 @@ const sendingmail = (req, res, next) => {
     from: "easycoding2000@gmail.com",
     to: email,
     subject: "Welcome to EasyCoder!",
-    html: `<p><h1>Welcome ${username} to EasyCoder!<h1> Thank you for contacting us. We'll get in touch with you soon. Have a nice day!<p/>
+    html: `<p><h1>Welcome ${username} to EasyCoder!</h1> Thank you for contacting us. We'll get in touch with you soon. Have a nice day!<p/>
     <a href="https://easycoder.herokuapp.com/"> click here to visit our website </a>`,
   };
 

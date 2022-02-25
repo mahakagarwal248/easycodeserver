@@ -11,32 +11,43 @@ const sendingmail = (req, res, next) => {
   });
   var mail1 = false;
   const { username, email, number, msg } = req.body;
-  const { name, data, encoding } = req.files.file;
-  var mailOptions = {
-    from: "easycoding2000@gmail.com",
-    to: ["bhomickyadav786@gmail.com", "mahakagarwal248@gmail.com"],
-    subject: "Details of user",
-    text: `username:${username}\n userid:${email}\n usernumber:${number} \n usermsg:${msg}`,
-    // attachments: {
-    //   filename: req.files.file.name,
-    //   content: new Buffer.alloc(
-    //     req.files.file.size,
-    //     req.files.file.data,
-    //     req.files.file.encoding
-    //   ),
-    // },
-    attachments: {
-      filename: name,
-      content: data,
-      encoding: encoding,
-    },
-  };
+  if (req.files === null) {
+    var mailOptions = {
+      from: "easycoding2000@gmail.com",
+      to: ["bhomickyadav786@gmail.com", "mahakagarwal248@gmail.com"],
+      subject: "Details of user",
+      text: `username:${username}\n userid:${email}\n usernumber:${number} \n usermsg:${msg}`,
+    };
+  } else {
+    const { name, data, encoding } = req.files.file;
+
+    var mailOptions = {
+      from: "easycoding2000@gmail.com",
+      to: ["bhomickyadav786@gmail.com", "mahakagarwal248@gmail.com"],
+      subject: "Details of user",
+      text: `username:${username}\n userid:${email}\n usernumber:${number} \n usermsg:${msg}`,
+      // attachments: {
+      //   filename: req.files.file.name,
+      //   content: new Buffer.alloc(
+      //     req.files.file.size,
+      //     req.files.file.data,
+      //     req.files.file.encoding
+      //   ),
+      // },
+      attachments: {
+        filename: name,
+        content: data,
+        encoding: encoding,
+      },
+    };
+  }
+
   var mailOptions1 = {
     from: "easycoding2000@gmail.com",
     to: email,
     subject: "Welcome to EasyCoder!",
-    html: `<p><h1>Welcome ${username} to EasyCoder!</h1> Thank you for contacting us. We'll get in touch with you soon. Have a nice day!<p/>
-    <a href="https://easycoder.herokuapp.com/"> click here to visit our website </a>`,
+    html: `<p><h3>Welcome ${username} to EasyCoder!</h3> Thank you for contacting us. We'll get in touch with you soon. Have a nice day!<p/>
+    <a href="https://easycoder.herokuapp.com/"> In the meantime click here to visit our website. </a>`,
   };
 
   transporter.sendMail(mailOptions1, function (error, info) {

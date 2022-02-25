@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
 nav {
   position: fixed;
   top: 0;
@@ -6,19 +6,18 @@ nav {
   height: 85px;
   display: flex;
   background-color: white;
-  
 }
-nav > h2{
+nav > h2 {
   text-align: left;
-  margin: 18px 25px; 
+  margin: 18px 25px;
 }
-nav > h2 > a{
+nav > h2 > a {
   color: #3089ac;
   font-weight: 900;
   font-size: 38px;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
 }
-nav > ul{
+nav > ul {
   display: inline-block;
 }
 .list {
@@ -38,11 +37,11 @@ nav > ul{
   border: 2px solid transparent;
   padding: 5px 15px;
 }
-.items > a{
+.items > a {
   color: #000;
   text-decoration: none;
 }
-.items:hover{
+.items:hover {
   border: 2px solid #035473;
   padding: 5px 15px;
   border-radius: 25px;
@@ -50,10 +49,10 @@ nav > ul{
   -webkit-box-shadow: 0 0 10px rgb(18, 66, 99);
   box-shadow: 0 0 10px rgb(18, 66, 99);
 }
-.list>hr{
+.list > hr {
   display: none;
 }
-.list > button{
+.list > button {
   background: transparent;
   border: 2px solid #035473;
   padding: 10px;
@@ -77,51 +76,53 @@ nav > ul{
   border-radius: 5px;
   border: 2px solid #035473;
 }
-@media (max-width:420px) {
-  nav{
+@media (max-width: 420px) {
+  nav {
     display: block;
+    z-index: 10;
     width: 100%;
   }
-  nav > ul{
+  nav > ul {
     width: 90%;
   }
   .list {
-        border-radius: 10px;
-        flex-direction: column;
-        height: auto;
-        background: #408ba8;
-        margin: auto;
-        text-align: center;
-    }
-    .items:nth-child(1){
-        border-top: 1px solid rgba(255, 255, 255, 0.555);
-        margin-top: 50px;
-    }
-    .items {
-        width: 90%;
-        border-top: 1px solid rgba(255, 255, 255, 0.555);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.555);
-        text-align: center;
-        padding: 20px 0;
-    }
-    .items:hover{
-      border: none;
-      box-shadow: none;
-      cursor: pointer;
-      line-height: 52px;
-    }
-    .list > hr{
-      margin-top: 0px;
-      display: block;
-      width: auto;
-      height: 1px;
-      background-color: rgba(255, 255, 255, 0.555);
-    }
-    .navbtn {
-        display: block;
-    }
-    .list > button{
-      background-color: transparent;
-      margin-bottom: 10px;
-    }
+    border-radius: 10px;
+    flex-direction: column;
+    height: auto;
+    background: #408ba8;
+    margin: auto;
+    text-align: center;
+    z-index: 9;
+  }
+  .items:nth-child(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.555);
+    margin-top: 50px;
+  }
+  .items {
+    width: 90%;
+    border-top: 1px solid rgba(255, 255, 255, 0.555);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.555);
+    text-align: center;
+    padding: 20px 0;
+  }
+  .items:hover {
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    line-height: 52px;
+  }
+  .list > hr {
+    margin-top: 0px;
+    display: block;
+    width: auto;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.555);
+  }
+  .navbtn {
+    display: block;
+  }
+  .list > button {
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
 }

@@ -18,54 +18,56 @@ const ContactForm = () => {
   const [defaultemail, setdefaultemail] = useState("example@gmail.com");
   const [defaultmsg, setdefaultmsg] = useState("Enter your query here");
   const [defaultnumber, setdefaultnumber] = useState("Enter Mobile Number");
+  const SendData = new FormData();
   const isEmptystyle = () => {
-    if (!FormData.name) {
+    if (!myfdata.name) {
       setEname(true);
       setdefaulename("*Required :name cannt be blank");
       mycontext.customtoast("name is Required", "error");
     }
-    if (!FormData.msg) {
+    if (!myfdata.msg) {
       setEmsg(true);
       setdefaultmsg("*Required : message cannt be blank");
       mycontext.customtoast("message is Required", "error");
     }
-    if (!FormData.number) {
+    if (!myfdata.number) {
       setEnumber(true);
       setdefaultnumber("*Required :number cannt be blank");
       mycontext.customtoast("number is Required", "error");
     }
-    if (!FormData.email) {
+    if (!myfdata.email) {
       setEemail(true);
       setdefaultemail("*Required :email cannt be blank");
       mycontext.customtoast("email is Required", "error");
     }
   };
-  const [FormData, setFormData] = useState({
+  const [myfdata, setmyfdata] = useState({
     name: "",
     email: "",
     msg: "",
     number: "",
   });
   const handleonchange = (event, field) => {
-    setFormData({
-      ...FormData,
+    setmyfdata({
+      ...myfdata,
       [field]: event.target.value,
     });
   };
   const onsubmit = async (event) => {
     event.preventDefault();
     isEmptystyle();
-    const { name, email, number, msg } = FormData;
+    const { name, email, number, msg } = myfdata;
     if (name && email && number && msg) {
       try {
-        if (!isNaN(parseInt(FormData.number))) {
+        SendData.append("username", name);
+        SendData.append("email", email);
+        SendData.append("number", number);
+        SendData.append("msg", msg);
+        if (!isNaN(parseInt(myfdata.number))) {
           setloading(true);
           const responce = await fetch("/contactus/mail", {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(FormData),
+            body: SendData,
           });
           const data = await responce.json();
 
@@ -111,7 +113,7 @@ const ContactForm = () => {
                 className={Ename ? style.empty : style.contactForm}
                 type="text"
                 placeholder={defaulename}
-                value={FormData.name}
+                value={myfdata.name}
                 onChange={(event) => handleonchange(event, "name")}
                 id="name"
                 name="fname"
@@ -126,7 +128,7 @@ const ContactForm = () => {
                 type="email"
                 onChange={(event) => handleonchange(event, "email")}
                 placeholder={defaultemail}
-                value={FormData.email}
+                value={myfdata.email}
                 id="email"
                 name="lname"
               />
@@ -140,7 +142,7 @@ const ContactForm = () => {
                 type="tel"
                 onChange={(event) => handleonchange(event, "number")}
                 placeholder={defaultnumber}
-                value={FormData.number}
+                value={myfdata.number}
                 id="number"
                 name="lname"
               />
@@ -157,7 +159,7 @@ const ContactForm = () => {
                 placeholder={defaultmsg}
                 id="textarea"
                 rows="3"
-                value={FormData.msg}
+                value={myfdata.msg}
               ></textarea>
               <label htmlFor="email" className={style.label}>
                 Upload File:
@@ -166,9 +168,10 @@ const ContactForm = () => {
               <input
                 className={style.file}
                 type="file"
-                //onChange={(event) => handleonchange(event, "number")}
+                onChange={(event) => {
+                  SendData.append("file", event.target.files[0]);
+                }}
                 placeholder={defaultnumber}
-                //value={FormData.number}
                 id="file"
                 name="file"
               />

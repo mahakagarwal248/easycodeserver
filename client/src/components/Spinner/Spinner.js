@@ -8,7 +8,6 @@ const Spinner = (props) => {
     margin: 0 auto;
     border-color: red;
   `;
-
   return (
     <div className={style.CompSpinner}>
       <h1 id={style.msgid}>{props.msg}</h1>
@@ -18,7 +17,7 @@ const Spinner = (props) => {
             color={"#408ba8"}
             css={override}
             loading={props.loading}
-            size={150}
+            size={(window.innerHeight + window.innerWidth) / 15}
             className={style.CompHash}
           />
         </div>

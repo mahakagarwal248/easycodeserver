@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
 nav {
   position: fixed;
   top: 0;
@@ -6,19 +6,18 @@ nav {
   height: 85px;
   display: flex;
   background-color: white;
-  
 }
-nav > h2{
+nav > h2 {
   text-align: left;
-  margin: 18px 25px; 
+  margin: 18px 25px;
 }
-nav > h2 > a{
+nav > h2 > a {
   color: #3089ac;
   font-weight: 900;
   font-size: 38px;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
 }
-nav > ul{
+nav > ul {
   display: inline-block;
 }
 .list {
@@ -38,19 +37,19 @@ nav > ul{
   border: 2px solid transparent;
   padding: 5px 15px;
 }
-.items > a{
+.items > a {
   color: #000;
   text-decoration: none;
 }
-.items:hover{
+.items:hover {
   border: 2px solid #035473;
   padding: 5px 15px;
   border-radius: 25px;
 }
-.list>hr{
+.list > hr {
   display: none;
 }
-.list > button{
+.list > button {
   background: transparent;
   border: 2px solid #035473;
   padding: 10px;
@@ -74,12 +73,13 @@ nav > ul{
   border-radius: 5px;
   border: 2px solid #035473;
 }
-@media (max-width:420px) {
-  nav{
+@media (max-width: 420px) {
+  nav {
     display: block;
+    z-index: 10;
     width: 100%;
   }
-  nav > ul{
+  nav > ul {
     width: 90%;
   }
   .list {

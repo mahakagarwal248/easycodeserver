@@ -24,15 +24,16 @@
   font-family: "Lobster", cursive;
   text-align: center;
 }
-@media (max-width:420px) {
-  .CompSpinner{
+@media (max-width: 420px) {
+  .CompSpinner {
     size: 100;
   }
-  .mainclass{
+  .mainclass {
     margin: auto;
     width: 100%;
   }
-  .logoclass,.CompHash{
+  .logoclass,
+  .CompHash {
     font-size: 50px;
   }
 }

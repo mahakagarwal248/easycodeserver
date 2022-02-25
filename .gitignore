@@ -7,11 +7,14 @@ node_modules
 client/node_modules
 # testing
 /coverage
+node_modules
 
+client/node_modules
 # production
 /build
-node_modules
+/node_modules
 /client/node_modules
+client/node_modules
 client/node_modules
 package-lock.json
 client/package-lock.json

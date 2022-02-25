@@ -1,11 +1,19 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const path = require("path");
-dotenv.config({ path: "./config.env" });
+const cors = require("cors");
+const fileUpload = require("express-fileupload");
 const app = express();
-const port = process.env.PORT;
 app.use(express.json()); //this middleware used to get req.body
 
+dotenv.config({ path: "./config.env" });
+const port = process.env.PORT;
+app.use(cors());
+app.use(
+  fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 },
+  })
+);
 app.use("/contactus", require("./routers/contactus"));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

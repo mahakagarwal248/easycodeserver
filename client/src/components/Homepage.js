@@ -16,8 +16,17 @@ function Homepage() {
         <div className="s1content">
           <p>Solution for your Website related problems.</p>
           <h1>
-            We design and develop experiences that make people's lives{" "}
-            <b>simple</b>.
+            <span>We</span>
+            <span>design</span>
+            <span>and</span>
+            <span>develop</span>
+            <span>experiences</span>
+            <span>that</span>
+            <span>make</span>
+            <span>people's</span>
+            <span>lives</span>
+            <span><b>simple</b>.</span>
+            
           </h1>
           <button className="btn">
             <Link to="/contactus" style={{ color: "white" }}>

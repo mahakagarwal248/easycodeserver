@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 .s1{
-    margin: 10px 0px;
-    background: url("../images/30668.jpg");
+    margin: 20px 0px;
+    background: url("../images/30668-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-x: right;
@@ -92,6 +92,17 @@
     padding: 10px 25px;
     color: white;
     font-size: 20px;
+    font-weight: 600;
+}
+.s1content>.btn:hover{
+    background-color: white;
+}
+.s1content>.btn>.contactbtn{
+    color: white;
+    text-decoration: none;
+}
+.s1content>.btn>.contactbtn:hover{
+    color: #408ba8;
 }
 .techs{
     margin-top: 100px;
@@ -142,7 +153,9 @@
     border: 0.1px solid lightgrey;
     border-radius: 10px;
     padding: 25px 20px;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray;
+    -moz-box-shadow: 0 0 5px #3089ac;
+    -webkit-box-shadow: 0 0 5px #3089ac;
+    box-shadow: 0 0 5px #3089ac;
     width: 300px;
 }
 .d1, .d2{
@@ -216,9 +229,20 @@
     border-radius: 25px;
     margin-top: 30px;
     padding: 10px 25px;
-    background-color: #2753DD;
+    background-color: #3089ac;
     color: white;
     font-size: 16px;
+    font-weight: 600;
+}
+.s3d2>.btn>.aboutbtn{
+    color:white;
+    text-decoration: none;
+}
+.s3d2>.btn:hover{
+    background-color: white;
+}
+.s3d2>.btn>.aboutbtn:hover{
+    color: #3089ac;
 }
 .s4{
     width: 1000px;
@@ -283,6 +307,7 @@
     font-weight: bold;
     font-size: 24px;
 }
+
 .s4 > .btn{
     float: left;
     margin-top: 20px;
@@ -319,7 +344,6 @@
     margin-right: 50px;
 }
 .s5d > h1{
-    width: 350px;
     text-align: left;
     margin-left: 80px;
     color: #000080;
@@ -328,15 +352,27 @@
     border: 2px solid #092986;
     border-radius: 25px;
     padding: 10px 25px;
-    background-color: #2753DD;
+    background-color: #3089ac;
     color: white;
     font-size: 15px;
     text-align: center;
+    font-weight: 600;
+}
+.s5d1>.btn:hover{
+    background-color: white;
+}
+.s5d1>.btn>.s5link{
+    color: white;
+    text-decoration: none;
+}
+.s5d1>.btn>.s5link:hover{
+    color: #3089ac;
 }
 .s5d1 > p{
     font-size: 14px;
     color:#7575a3;
     font-weight: bold;
+    margin-top: 5px;
 }
 .mail{
     vertical-align: middle;

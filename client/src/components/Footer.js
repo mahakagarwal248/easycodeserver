@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
       <div className="fdd">
-        <p>@ copyright 2020</p>
+        <p>@ Copyright 2022</p>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function Homepage() {
             
           </h1>
           <button className="btn">
-            <Link to="/contactus" style={{ color: "white" }}>
+            <Link to="/contactus" className="contactbtn" >
               Free consultation
             </Link>
           </button>
@@ -139,7 +139,7 @@ function Homepage() {
           </p>
 
           <button className="btn">
-            <Link to="/contactus" style={{color:'white'}}>What we can do for you</Link>
+            <Link to="/contactus" className="aboutbtn">What we can do for you</Link>
           </button>
         </div>
       </section>
@@ -180,7 +180,7 @@ function Homepage() {
                   alt=""
                 />
                 <h5>Demo 3</h5>
-                <p>This one has some type of designing elements which can be used anywhere.</p>
+                <p>This one has some designing elements.</p>
               </div>
             </Link>
 
@@ -207,10 +207,10 @@ function Homepage() {
       </section>
       <section className="s5">
         <div className="s5d">
-          <h1>Ready to Launch your next website?</h1>
+          <h1>Ready to Launch <br/>your next website?</h1>
           <div className="s5d1">
             <button className="btn">
-              <Link to="/contactus" style={{ color: "white" }}>
+              <Link to="/contactus" className="s5link">
                 <MailOutlineIcon className="mail" />
                 Get in touch now!
               </Link>

@@ -153,9 +153,9 @@
     border: 0.1px solid lightgrey;
     border-radius: 10px;
     padding: 25px 20px;
-    -moz-box-shadow: 0 0 5px #3089ac;
-    -webkit-box-shadow: 0 0 5px #3089ac;
-    box-shadow: 0 0 5px #3089ac;
+    -moz-box-shadow: 0 0 5px #749cac;
+    -webkit-box-shadow: 0 0 5px #749cac;
+    box-shadow: 0 0 5px #749cac;
     width: 300px;
 }
 .d1, .d2{
@@ -277,7 +277,9 @@
 .s4d1d1, .s4d1d2, .s4d2d1, .s4d2d2{
     text-align: left;
     margin-top: 80px;
-    padding: 30px 70px;
+    width: 330px;
+    padding: 30px 40px;
+    padding-bottom: 10px;
     -moz-box-shadow: 0 0 5px #999;
     -webkit-box-shadow: 0 0 5px #999;
     box-shadow: 0 0 5px #999;
@@ -290,13 +292,13 @@
     box-shadow: 0 0 25px #999;
 }
 .s4d1d1 > img ,.s4d1d2 > img{
-    height: 250px;
-    border-radius: 15px;
+    height: 200px;
+    width: 250px;
     margin-bottom: 15px;
 }
 .s4d2d1 > img ,.s4d2d2 > img{
-    height: 250px;
-    border-radius: 15px;
+    height: 200px;
+    width: 250px;
     margin-bottom: 15px;
 }
 .s4d1d1 > h5, .s4d1d2 > h5, .s4d2d1 > h5, .s4d2d2 > h5{

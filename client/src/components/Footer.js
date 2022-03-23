@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Footer.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
         <div className="fd1">
           <h3>YourDesigner</h3>
           <p>We are an independent team who work on people's requirements.</p>
+          <p id="p2"><MailOutlineIcon style={{verticalAlign:'middle'}}/> easycoding2000@gmail.com</p>
         </div>
         <div className="fd2">
           <h5>Pages</h5>

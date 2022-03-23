@@ -153,7 +153,7 @@ function Homepage() {
               {" "}
               <div className="s4d1d1">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
+                  src="/images/demo1.png"
                   alt=""
                 />
                 <h5>Demo 1</h5>
@@ -163,7 +163,7 @@ function Homepage() {
             <Link to="demo/site2">
               <div className="s4d1d2">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
+                  src="/images/demo2.png"
                   alt=""
                 />
                 <h5>Demo 2</h5>
@@ -176,7 +176,7 @@ function Homepage() {
               {" "}
               <div className="s4d2d1">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
+                  src="/images/demo3.png"
                   alt=""
                 />
                 <h5>Demo 3</h5>
@@ -187,8 +187,9 @@ function Homepage() {
             <a href="https://quoraclone-c9aa3.web.app/">
               <div className="s4d2d2">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
+                  src="/images/demo4.png"
                   alt=""
+                  style={{border:'1px solid grey'}}
                 />
                 <h5>Demo 4</h5>
                 <p>It is the quora-clone.</p>

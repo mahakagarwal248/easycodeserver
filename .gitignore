@@ -8,6 +8,7 @@ client/node_modules
 # testing
 /coverage
 node_modules
+package-lock.json
 
 client/node_modules
 # production

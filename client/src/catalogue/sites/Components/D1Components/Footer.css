@@ -43,13 +43,3 @@
     background-color: tomato;
     color: white;
 }
-@media (max-width:420px) {
-    .d1footer{
-        width: 100%;
-        flex-direction: column;
-        padding-left: 30px;
-    }
-    .d1fd1, .d1fd2,.d1fd3,.d1fd4{
-        width: 50%;
-    }
-}

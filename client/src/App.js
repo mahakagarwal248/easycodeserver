@@ -10,8 +10,6 @@ import { Demothird } from "./catalogue/sites/Demothird";
 import ContactForm from "./components/ContactForm/ContactForm";
 import WorkingState from "./contexts/workngalert/workingstate";
 import Spinner from "./components/Spinner/Spinner";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [loading, setloading] = useState(false);
   useEffect(() => {
@@ -30,29 +28,24 @@ function App() {
               exact
               path="/"
               element={
-                <>
-                  {loading ? (
-                    <>
-                      <Spinner loading={loading} msg="Welcome to " />
-                    </>
-                  ) : (
-                    <div className="App">
-                      <Navbar />
-                      <Homepage />
-                      <Footer />
-                    </div>
-                  )}
-                </>
+                loading ? (
+                  <Spinner loading={loading} />
+                ) : (
+                  <div className="App">
+                    <Navbar />
+                    <Homepage />
+                    <Footer />
+                  </div>
+                )
               }
             ></Route>
-            <Route exact path="/contactus" element={<ContactForm />} />
+            <Route path="/contactus" element={<ContactForm />} />
             <Route exact path="/demo">
               <Route path="/demo/site1" element={<Demofirst />} />
               <Route path="/demo/site2" element={<Demosecond />} />
               <Route path="/demo/site3" element={<Demothird />} />
             </Route>
           </Routes>
-          <ToastContainer theme="colored" />
         </BrowserRouter>
       </WorkingState>
     </>

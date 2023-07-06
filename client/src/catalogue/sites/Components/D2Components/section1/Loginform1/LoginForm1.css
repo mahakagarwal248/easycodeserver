@@ -61,12 +61,3 @@
 #span{
     margin-left: auto;
 }
-@media (max-width:420px) {
-    .loginform1{
-        padding: 50px;
-        text-align: center;
-    }
-    .loginform1>form{
-        width: 100%;
-    }
-}

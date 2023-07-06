@@ -10,7 +10,7 @@ import Workingcontext from "../../../../contexts/workngalert/workingcontext";
 function MainPage() {
   const notworkcontext = useContext(Workingcontext);
   const developmentstate = () => {
-    notworkcontext.customtoast("website in development state ", "warn");
+    notworkcontext.notworkingalert();
   };
   return (
     <div className="d1maincontent">
@@ -101,7 +101,7 @@ function MainPage() {
           </p>
         </div>
         <div className="d1s2d2">
-          <CompCarousel className="compcarousel" />
+          <CompCarousel />
         </div>
       </section>
       <section className="d1s3">
@@ -114,7 +114,7 @@ function MainPage() {
               Design your interiors <br />
               with the style you want
             </h2>
-            <button onClick={developmentstate}>View more styles</button>
+            <button>View more styles</button>
           </div>
           <div className="d1s3d2">
             <div>
@@ -182,15 +182,7 @@ function MainPage() {
             <br />
             <input type="text" maxLength="200" placeholder="Message" />
             <br />
-            <button
-              type="submit"
-              onClick={(event) => {
-                event.preventDefault();
-                developmentstate();
-              }}
-            >
-              Submit
-            </button>
+            <button type="submit">Submit</button>
             <br />
           </form>
         </div>

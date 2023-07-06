@@ -22,9 +22,7 @@
     width: 250px;
     font-weight: 700;
     color: rgb(107, 106, 106);
-    margin-bottom: 6px;
 }
-
 .fd2{
     text-align: left;
     padding-left: 10%;
@@ -43,25 +41,10 @@
     font-weight: 600;
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:780px) {
     .footer{
         overflow: hidden;
-        width:100%;
+        width:1000px;
     }
-    .fd{
-        flex-direction: column;
-    }
-    .fd1,.fd2,.fd3{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .fd2,.fd3{
-        padding-left: 0px;
-    }
-    .fd3{
-        text-align: left;
-    }
-    .fd3>.icons{
-        margin-left: 0;
-    }
+    
 }

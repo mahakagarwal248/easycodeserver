@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "../css/Homepage.css";
 import { Link } from "react-router-dom";
 import BlurLinearIcon from "@mui/icons-material/BlurLinear";
@@ -6,33 +6,18 @@ import InsightsIcon from "@mui/icons-material/Insights";
 import RecommendIcon from "@mui/icons-material/Recommend";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Workingcontext from "../contexts/workngalert/workingcontext";
-function Homepage() {
-  const mycontext = useContext(Workingcontext);
 
+function Homepage() {
   return (
     <div className="homepage">
-      <section className="s1" id="s1">
+      <section className="s1">
         <div className="s1content">
           <p>Solution for your Website related problems.</p>
           <h1>
-            <span>We</span>
-            <span>design</span>
-            <span>and</span>
-            <span>develop</span>
-            <span>experiences</span>
-            <span>that</span>
-            <span>make</span>
-            <span>people's</span>
-            <span>lives</span>
-            <span><b>simple</b>.</span>
-            
+            We design and develop experiences that make people's lives{" "}
+            <b>simple</b>.
           </h1>
-          <button className="btn">
-            <Link to="/contactus" className="contactbtn" >
-              Free consultation
-            </Link>
-          </button>
+          <button className="btn">Free consultation</button>
         </div>
       </section>
       <section className="techs">
@@ -137,10 +122,7 @@ function Homepage() {
             your site as you want. You can choose design from our catalogue or
             can give your own designs as per your requirement.
           </p>
-
-          <button className="btn">
-            <Link to="/contactus" className="aboutbtn">What we can do for you</Link>
-          </button>
+          <button className="btn">What we can do for you</button>
         </div>
       </section>
       <section className="s4" id="catalogue">
@@ -153,21 +135,21 @@ function Homepage() {
               {" "}
               <div className="s4d1d1">
                 <img
-                  src="/images/demo1.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Demo 1</h5>
-                <p>It is an Architect's Website.</p>
+                <h5>Title1</h5>
+                <p>description1</p>
               </div>
             </Link>
             <Link to="demo/site2">
               <div className="s4d1d2">
                 <img
-                  src="/images/demo2.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Demo 2</h5>
-                <p>It has some different kinds of Login Forms.</p>
+                <h5>Title2</h5>
+                <p>description2</p>
               </div>
             </Link>
           </div>
@@ -176,64 +158,50 @@ function Homepage() {
               {" "}
               <div className="s4d2d1">
                 <img
-                  src="/images/demo3.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
                 />
-                <h5>Demo 3</h5>
-                <p>This one has some designing elements.</p>
+                <h5>Title3</h5>
+                <p>description3</p>
               </div>
             </Link>
 
             <a href="https://quoraclone-c9aa3.web.app/">
               <div className="s4d2d2">
                 <img
-                  src="/images/demo4.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6nQma3Cmar0Ptz-XvagoCcHVH6IjDx6AvQ&usqp=CAU"
                   alt=""
-                  style={{border:'1px solid grey'}}
                 />
-                <h5>Demo 4</h5>
-                <p>It is the quora-clone.</p>
+                <h5>Title4</h5>
+                <p>description4</p>
               </div>
             </a>
           </div>
         </div>
-        <button className="btn" onClick={() => {
-                  mycontext.customtoast(
-                    "website in development state ",
-                    "warn"
-                  );
-                }}>
+        <button className="btn">
           See More <ArrowRightAltIcon className="arrow" />
         </button>
       </section>
       <section className="s5">
         <div className="s5d">
-          <h1>Ready to Launch <br/>your next website?</h1>
+          <h1>Ready to Launch your next website?</h1>
           <div className="s5d1">
             <button className="btn">
-              <Link to="/contactus" className="s5link">
-                <MailOutlineIcon className="mail" />
-                Get in touch now!
-              </Link>
+              <MailOutlineIcon className="mail" />
+              Get in touch now!
             </button>
             <p>
               Or, take a peek in our{" "}
-              <Link
-                to="/"
+              <a
+                href="/"
                 style={{
                   fontWeight: "bold",
                   color: "#6610f2",
                   textDecoration: "underline",
                 }}
-                onClick={() => {
-                  mycontext.customtoast(
-                    "website in development state ",
-                    "warn"
-                  );
-                }}
               >
                 design studio
-              </Link>
+              </a>
             </p>
           </div>
         </div>

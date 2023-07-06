@@ -1,65 +1,48 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+
 import "../css/Navbar.css";
-import DehazeIcon from "@mui/icons-material/Dehaze";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu);
-  };
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", changeWidth);
-    return () => {
-      window.removeEventListener("resize", changeWidth);
-    };
-  }, []);
-  window.addEventListener("scroll", (event) => {
-    if (toggleMenu) {
-      setToggleMenu(false);
+  const [navcss, setnavcss] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 20) {
+      setnavcss(true);
+    } else {
+      setnavcss(false);
     }
-  });
-  const handleonclick = () => {
-    setToggleMenu(false);
   };
-
+  window.addEventListener("scroll", changeBackground);
   return (
-    <nav>
-      <h2>
-        <a href="/">EasyCoder</a>
-      </h2>
-      {(toggleMenu || screenWidth > 500) && (
-        <ul className="list">
-          <li onClick={handleonclick} className="items">
-            <a href="/">Home</a>
-          </li>
-          <li onClick={handleonclick} className="items">
-            <a href="/#services">Our Services</a>
-          </li>
-          <li onClick={handleonclick} className="items">
-            <a href="/#about">About Us</a>
-          </li>
-          <li onClick={handleonclick} className="items">
-            <a href="/#catalogue">Catalogue</a>
-          </li>
-          <hr />
-          <button className="items">
+    <div>
+      <div className={navcss ? "navbar navactive" : "navbar"}>
+        <div className="title">
+          <h3>
+            <Link to="/">EasyCoding</Link>
+          </h3>
+
+          <a href="/" className="hoverclass1">
+            Home
+          </a>
+          <a href="/#services" className="hoverclass1">
+            Our Services
+          </a>
+          <a href="/#about" className="hoverclass1">
+            About us
+          </a>
+          <a href="/#catalogue" className="hoverclass1">
+            Catalogue
+          </a>
+        </div>
+        <div className="contents">
+          <button className="btn">
             <Link to="/contactus" style={{ color: "white" }}>
-              Contact Us
+              Contact us
             </Link>
           </button>
-        </ul>
-      )}
-
-      <button onClick={toggleNav} className="navbtn">
-        <DehazeIcon style={{ verticalAlign: "middle", color: "#035473" }} />
-      </button>
-    </nav>
+        </div>
+      </div>
+    </div>
   );
 }
 

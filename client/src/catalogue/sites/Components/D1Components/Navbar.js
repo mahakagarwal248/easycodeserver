@@ -5,7 +5,7 @@ import Workingcontext from "../../../../contexts/workngalert/workingcontext";
 function Navbar() {
   const notworkcontext = useContext(Workingcontext);
   const developmentstate = () => {
-    notworkcontext.customtoast("website in development state ", "warn");
+    notworkcontext.notworkingalert();
   };
   return (
     <div className="d1navbar">

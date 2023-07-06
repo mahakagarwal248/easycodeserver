@@ -1,108 +1,53 @@
 .firstdiv {
   height: 60%;
-  width: 35%;
+  width: 30%;
   margin: auto;
-  margin-top: 12vh;
-  margin-bottom: 5vh;
-  background-color: #408ba8;
+  margin-top: 15vh;
+  background-color: black;
   padding: 30px;
-  border-radius: 20px;
 }
-
-.form {
+.form{
   width: 100%;
 }
-.h1 {
-  color: #05384d;
+.h1{
+  color: palevioletred;
   font-style: italic;
   text-align: center;
   margin-bottom: 10px;
 }
 .mytextarea {
-  border: 2px solid rgb(56, 56, 56);
+  border: 1px solid rgb(56, 56, 56);
   width: 100%;
   margin: 5px 0;
   padding: 3px;
   border-radius: 5px;
-  padding-left: 18px;
-  font-size: 16px;
-  color: #000;
 }
 .contactForm {
   border-radius: 5px;
-  height: 50px;
-  border: 2px solid #035473;
+  height: 30px;
+  border: 1px solid rgb(56, 56, 56);
   width: 100%;
-  font-size: 16px;
-  color: black;
 }
-.contactForm:hover {
+.contactForm:hover{
   cursor: text;
 }
-.contactForm::-webkit-input-placeholder,.mytextarea::-webkit-input-placeholder{
-  font-size: 16px;
-}
-
-.mytextarea:hover {
+.mytextarea:hover{
   cursor: text;
 }
-.label {
-  font-size: 20px;
-  font-weight: 700;
-  color: #102b38;
+.label{
+  font-size: 18px;
+  font-weight: 500;
+  color: palevioletred;
 }
-.button {
-  font-size: 20px;
+.button{
+  font-size: 18px;
   font-weight: 500;
   border: 1px solid black;
   border-radius: 15px;
   padding: 5px 15px;
-  background-color: #05384d;
-  color: white;
+  background-color: palevioletred;
   margin: auto;
   width: 100px;
   margin-top: 15px;
   display: block;
-  border: 2px solid transparent;
-}
-.button:hover{
-  border: 2px solid #05384d;
-  background-color: #035473;
-}
-.iconclass {
-  font-size: 32px;
-}
-.empty {
-  border-radius: 5px;
-  height: 50px;
-  border: 2.3px solid rgb(211, 0, 0);
-  width: 100%;
-}
-.emptytextarea {
-  border: 2.3px solid rgb(211, 0, 0);
-  width: 100%;
-  margin: 5px 0;
-  padding: 3px;
-  border-radius: 5px;
-}
-.file{
-  padding: 0px;
-  font-size: 20px;
-  border: 1px solid #035473;
-  border-radius: 5px;
-}
-.file::-webkit-file-upload-button{
-  border: 1px solid black;
-  font-size: 22px;
-  padding: 1px 10px;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-@media (max-width:720px) {
-  .firstdiv{
-    width: 90%;
-    padding: 10px;
-    margin: auto;
-    margin-top: 12vh;
-  }
 }

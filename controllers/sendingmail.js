@@ -2,6 +2,7 @@ var nodemailer = require("nodemailer");
 const EMAIL = process.env.EMAIL_ID;
 const PASS = process.env.EMAIL_PASS;
 const sendingmail = (req, res, next) => {
+  const { username, email, number, msg } = req.body;
   var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -14,7 +15,7 @@ const sendingmail = (req, res, next) => {
     from: "easycoding2000@gmail.com",
     to: ["bhomickyadav786@gmail.com", "mahakagarwal248@gmail.com"],
     subject: "Details of user",
-    text: `username:${req.body.name}\n userid:${req.body.email}\n usernumber:${req.body.number} \n usermsg:${req.body.msg}`,
+    text: `username:${username}\n userid:${email}\n usernumber:${number} \n usermsg:${msg}`,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
